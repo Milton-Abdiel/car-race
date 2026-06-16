@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+h1{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+#hud{
+    width:400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+#vidas{
+    color:red;
+}
+
+#record{
+    color:lime;
+}
+
+#monedas{
+    color:gold;
+}
+
+#velocidad{
+    color:cyan;
+}
+
+#gameContainer{
+    position:relative;
+    width:400px;
+    height:600px;
+    margin:auto;
+}
+
+#juego{
+    width:400px;
+    height:600px;
+    border:4px solid white;
+    border-radius:10px;
+    background:black;
+}
+
+#gameOver{
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:rgba(0,0,0,0.95);
+    padding:25px;
+    border-radius:15px;
+    border:2px solid white;
+}
+
+#gameOver h2{
+    margin-bottom:15px;
+}
+
+button{
+    cursor:pointer;
+}
+
+#controles{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:15px;
+}
+
+#controles button{
+    width:90px;
+    height:90px;
+    border:none;
+    border-radius:50%;
+    font-size:40px;
+
+    background:linear-gradient(
+        180deg,
+        #ffffff,
+        #dcdcdc
+    );
+
+    box-shadow:
+    0 5px 10px rgba(0,0,0,.5);
+}
+
+#controles button:active{
+    transform:scale(.95);
+}

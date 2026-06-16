@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>🏁 Car Race</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="manifest"
+          href="manifest.json">
+
+    <meta name="theme-color"
+          content="#111111">
+
+</head>
+
+<body>
+
+    <h1>🏁 CAR RACE</h1>
+
+    <div id="hud">
+
+        <div id="vidas">
+            ❤️ ❤️ ❤️
+        </div>
+
+        <div id="puntaje">
+            Puntos: 0
+        </div>
+
+        <div id="record">
+            🏆 0
+        </div>
+
+        <div id="monedas">
+            🪙 0
+        </div>
+
+        <div id="velocidad">
+            ⚡ 1
+        </div>
+
+    </div>
+
+    <div id="gameContainer">
+
+        <canvas id="juego"
+                width="400"
+                height="600">
+        </canvas>
+
+        <div id="gameOver">
+
+            <h2>💥 GAME OVER</h2>
+
+            <button onclick="reiniciarJuego()">
+                Jugar otra vez
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="controles">
+
+        <button id="btnIzquierda">
+            ⬅️
+        </button>
+
+        <button id="btnDerecha">
+            ➡️
+        </button>
+
+    </div>
+
+    <script src="app.js"></script>
+
+    <script>
+
+        if ("serviceWorker" in navigator) {
+
+            window.addEventListener("load", () => {
+
+                navigator.serviceWorker
+                    .register("sw.js");
+
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>
