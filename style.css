@@ -105,3 +105,24 @@ button{
 #controles button:active{
     transform:scale(.95);
 }
+/* CRÉDITOS */
+
+.creditos{
+    width:400px;
+    margin:20px auto;
+    padding:12px;
+    background:#1a1a1a;
+    border:1px solid #333;
+    border-radius:10px;
+    text-align:center;
+    color:#ddd;
+    font-size:14px;
+}
+
+.creditos strong{
+    color:gold;
+}
+
+.creditos p{
+    margin:5px 0;
+}
